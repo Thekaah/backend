@@ -7,7 +7,7 @@ const bcrypt = require("bcrypt");
 const router = express.Router();
 
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 8080;
 
 app.use(cors());
 app.use(express.json());
